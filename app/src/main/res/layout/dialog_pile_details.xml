@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="237dp">
+
+    <LinearLayout
+        android:id="@+id/ll_pile_details"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:background="@drawable/title_radius_solid_react"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_station_name"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:drawableLeft="@drawable/all_dot"
+            android:drawablePadding="9dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="9dp"
+            android:textColor="@color/black_32"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:background="@color/green_00" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_distance"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="26dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray_83"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_pile_num"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="26dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray_83"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="26dp"
+            android:ellipsize="middle"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/gray_83"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/bt_navigation"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/title_radius"
+                android:text="导航"
+                android:textColor="@color/white_ff"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="5dp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/bt_pile_details"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/title_radius"
+                android:text="@string/details"
+                android:textColor="@color/white_ff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_empty"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/ll_pile_details" />
+</RelativeLayout>

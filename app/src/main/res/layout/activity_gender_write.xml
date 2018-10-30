@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:text="性别"
+        android:textColor="@color/black_64"
+        android:textSize="14sp" />
+
+    <com.langwing.samocharge._view.ClearWriteEditText
+        android:id="@+id/et_gender"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_gender"
+        android:background="@null"
+        android:hint="请输入性别"
+        android:paddingRight="12dp"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_gender"
+        android:background="@color/gray_f2" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/view"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/title_radius"
+        android:text="@string/save"
+        android:textColor="@color/white_ff" />
+</RelativeLayout>

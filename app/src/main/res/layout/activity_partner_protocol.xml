@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="._activity._partnerProtocol.PartnerProtocolActivity">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_read_protocol"
+        android:layout_below="@id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="萨默合伙人协议"
+                android:textColor="@color/black_32"
+                android:textSize="20sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="首部及导言"
+                android:textColor="@color/black_32"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="欢迎加入萨默科技，我们将一起共创辉煌！"
+                android:textColor="@color/black_32"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="为了规范合伙企业的行为，保护合伙企业及其合伙的合法利益，根据《中华人民共和国合伙企业法》及有关法律、法规规定，甲、乙、丙各方本着自愿、平等、公平、诚实信用的原则，签订本协议。请合伙人审慎阅读协议和条款，并选择是否接受。"
+                android:textColor="@color/black_32"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="一、协议内容"
+                android:textColor="@color/black_32"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1.1 财务、会计"
+                android:textColor="@color/black_32"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="合伙企业依据《中华人民共和国会计法》和财政部颁布的《企业财务通则》、《企业会计准则》的规定，建立本合伙企业的财产、会计制度。"
+                android:textColor="@color/black_32"
+                android:textSize="15sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1.2 盈余分配"
+                android:textColor="@color/black_32"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="
+1、合伙各方共同经营、共同劳动，共担风险，共负盈亏。\n
+2、盈余分配以为依据，按比例分配。合伙企业分配当年的税后利润（亏损），按下列顺序进行；\n
+（1）提取法定公积金10％；\n
+（2）提取法定公益金5-10％；\n
+（3）剩余利润（亏损）按合伙人出资比例分配（分担）。\n
+3、合伙企业的利益分配、亏损，如另有变动的，其具体方案由全体合伙人协商决定。"
+                android:textColor="@color/black_32"
+                android:textSize="15sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1.3 债务承担"
+                android:textColor="@color/black_32"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="
+1、合伙企业债务由合伙企业财产偿还。\n
+2、合伙企业不够偿还时，由合伙人按各自出资的比例承担债务。\n
+3、合伙企业的债务承担，如另有变动的，其具体方案由全体合伙人协商决定。\n
+4、由一名或者数名合伙人执行合伙企业事务的，应当依照约定向其他不参加执行事务的合伙人报告事务执行情况以及合伙企业的经营状况和财务状况，其执行合伙企业事务所产生的收益归全体合伙人，所产生的亏损或者民事责任，由全体合伙人承担。
+"
+                android:textColor="@color/black_32"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_read_protocol"
+        android:layout_below="@id/title"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_read_protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/title_radius"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="已阅读并同意协议"
+        android:textColor="@color/white_ff" />
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_web"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_read_protocol"
+        android:layout_below="@id/title" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_read_protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/title_radius"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="已阅读并同意协议"
+        android:textColor="@color/white_ff"
+        android:visibility="gone" />
+</RelativeLayout>

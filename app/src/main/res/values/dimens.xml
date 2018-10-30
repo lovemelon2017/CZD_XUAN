@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingLeft">12dp</dimen>
+    <dimen name="paddingRight">12dp</dimen>
+    <dimen name="paddingTop">6dp</dimen>
+    <dimen name="paddingBottom">6dp</dimen>
+    <dimen name="pickerview_textsize">20sp</dimen>
+    <dimen name="gudieview_heigh">6dp</dimen>
+    <dimen name="gudieview_width">6dp</dimen>
+</resources>

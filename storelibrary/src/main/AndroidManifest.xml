@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.langwing.store">
+
+    <application>
+        <activity android:name="._orderDetails.GoodsOrderDetailsActivity" />
+        <activity android:name="._shippingAddress.ShippingAddressActivity" />
+        <activity android:name="._orderPurchaseDetails.OrderPurchaseDetailsActivity" />
+        <activity android:name="._goodsDetails.GoodsDetailsActivity" />
+        <activity android:name="._sign.SignActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/transaction_record" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_recharge_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_icon"
+        android:text="微信充值"
+        android:textColor="@color/black_32"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_recharge_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_recharge_method"
+        android:layout_below="@id/tv_recharge_method"
+        android:layout_marginTop="5dp"
+        android:text="2017-11-28"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_recharge_method"
+        android:layout_marginRight="12dp"
+        android:text="+100"
+        android:textColor="@color/black_32"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_recharge_time"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_f2" />
+</RelativeLayout>

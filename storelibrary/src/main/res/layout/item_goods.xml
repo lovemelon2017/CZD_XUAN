@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_goods"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_ff">
+
+    <ImageView
+        android:id="@+id/iv_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:src="@drawable/goods" />
+
+    <TextView
+        android:id="@+id/tv_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_goods"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:text="哈尔斯500ml不锈钢真空保温杯户外旅行车载子弹头水杯子HB-500AX香槟金"
+        android:textColor="@color/black_64"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_new_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_below="@id/tv_goods"
+        android:layout_marginLeft="9dp"
+        android:background="@drawable/red_round"
+        android:gravity="center"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:text="最新活动"
+        android:textColor="@color/white_ff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_old_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_new_activity"
+        android:paddingLeft="9dp"
+        android:text="￥60"
+        android:textColor="@color/black_83"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_new_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_old_price"
+        android:paddingBottom="9dp"
+        android:paddingLeft="9dp"
+        android:text="￥1+10000积分"
+        android:textColor="@color/red_ee"
+        android:textSize="14sp" />
+</RelativeLayout>

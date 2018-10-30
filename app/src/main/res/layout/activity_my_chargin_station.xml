@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_carring_piles_into_network"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/unite_ripple"
+        android:drawableRight="@drawable/right_arrow_btn"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="携桩入网"
+        android:textColor="@color/black_32"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_f2" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_put_into_the_net"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/unite_ripple"
+        android:drawableRight="@drawable/right_arrow_btn"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="认桩入网"
+        android:textColor="@color/black_32"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_f2" />
+
+</LinearLayout>

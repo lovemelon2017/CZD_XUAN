@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/scan_code"
+        android:textColor="@color/white_ff"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_scan_code_charging"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/scan_code_charging"
+        android:textColor="@color/black_32"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.langwing.samocharge._view.WaterRippleView
+        android:id="@+id/water_ripple_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_scan_code_charging"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:rippleAutoRunning="true"
+        app:rippleCenterIcon="@drawable/scan_code"
+        app:rippleColor="@color/colorPrimary"
+        app:rippleCount="4"
+        app:rippleSpacing="16sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/water_ripple_view"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="余额："
+        android:textColor="@color/black_64"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_over"
+        android:layout_toRightOf="@id/tv_over"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/balance"
+        android:text="1"
+        android:textColor="@color/black_32"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/water_ripple_view"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/right_blue_arrow"
+        android:padding="5dp"
+        android:text="立即充值"
+        android:textColor="@color/cyan_blue"
+        android:textSize="14sp" />
+
+</RelativeLayout>

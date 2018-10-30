@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/unit_ripple_angle"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_reply_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="萨利"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:text="回复"
+        android:textColor="@color/black_83"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_current_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小马"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_reply_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="12dp"
+        android:text="：回复内容，我是回复内容，我是会恢复内容,回复内容，我是回复内容，我是会恢复内容回复内容，我是回复内容，我是会恢复内容"
+        android:textColor="@color/black_64"
+        android:textSize="12sp" />
+</LinearLayout>

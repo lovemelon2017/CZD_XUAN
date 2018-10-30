@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.langwing.samocharge">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".ChargingApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 高德地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="64f1fbc3a0a4e7fd7da818434ccce4ab" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.langwing.samocharge.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/app_file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- 主页 -->
+        <activity
+            android:name="._activity._main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <!-- 登录 -->
+        <activity
+            android:name="._activity._login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <!-- 闪屏 -->
+        <activity
+            android:name="._activity._launch.LaunchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LauncherTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 充电站详情 -->
+        <activity
+            android:name="._activity._chargingStationDetails.StationDetailsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 注册 -->
+        <activity
+            android:name="._activity._register.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <!-- 导航 -->
+        <activity
+            android:name="._activity._navigation.NavigationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavTheme" />
+        <!-- 充值 -->
+        <activity
+            android:name="._activity._recharge.RechargeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 订单详情 -->
+        <activity
+            android:name="._activity._orderDetails.OrderDetailsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 充电 -->
+        <activity
+            android:name="._activity._chargingStatus.ChargingStatusActivity"
+            android:screenOrientation="portrait" />
+        <!-- 扫描充电 -->
+        <activity
+            android:name="._activity._chargingScan.ChargingScanActivity"
+            android:screenOrientation="portrait" />
+        <!-- 扫描充电详情 -->
+        <activity
+            android:name="._activity._scanCodeDetails.ScanCodeDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ScanCodeDetailsStyle" />
+        <!-- 操作说明 -->
+        <activity
+            android:name="._activity._instructions.InstructionsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 支付成功 -->
+        <activity
+            android:name="._activity._paymentSuccessful.PaymentSuccessfulActivity"
+            android:screenOrientation="portrait" />
+        <!-- 账户设置 -->
+        <activity
+            android:name="._activity._setting.SettingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 个人信息 -->
+        <activity
+            android:name="._activity._personalInfo.PersonalInfoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 性别填写 -->
+        <activity
+            android:name="._activity._genderWrite.GenderWriteActivity"
+            android:screenOrientation="portrait" />
+        <!-- 个人余额 -->
+        <activity
+            android:name="._activity._personalBalance.PersonalBalanceActivity"
+            android:screenOrientation="portrait" />
+        <!-- 交易记录 -->
+        <activity
+            android:name="._activity._transactionRecord.TransactionRecordActivity"
+            android:screenOrientation="portrait" />
+        <!-- 充电记录 -->
+        <activity
+            android:name="._activity._chargingRecord.ChargingRecordActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的充电站 -->
+        <activity
+            android:name="._activity._myChargingStation.MyCharginStationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的收藏 -->
+        <activity
+            android:name="._activity._myCollection.MyCollectActivity"
+            android:screenOrientation="portrait" />
+        <!-- 站内消息 -->
+        <activity
+            android:name="._activity._stationNews.StationNewsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 申请建桩 -->
+        <activity
+            android:name="._activity._applyForPile.ApplyForPileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/GeneralBgStyle" />
+        <!-- 并网共营 -->
+        <activity
+            android:name="._activity._collaborateWithNet.CollaborateWithNetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/GeneralBgStyle" />
+        <!-- 待开发 -->
+        <activity
+            android:name="._activity._development.DevelpmentActivity"
+            android:screenOrientation="portrait" />
+        <!-- 写想法 -->
+        <activity
+            android:name="._activity._editIdea.EditIdeaActivity"
+            android:screenOrientation="portrait" />
+        <!-- 优惠券 -->
+        <activity
+            android:name="._activity._coupon.CouponActivity"
+            android:screenOrientation="portrait" />
+        <!-- 关于我们 -->
+        <activity
+            android:name="._activity._aboutUs.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择城市 -->
+        <activity
+            android:name="._activity._selectCity.SelectCityActivity"
+            android:screenOrientation="portrait" />
+        <!-- 搜索 -->
+        <activity
+            android:name="._activity._search.SearchActivity"
+            android:screenOrientation="portrait" />
+        <!-- 引导页 -->
+        <activity
+            android:name="._activity._guidePage.GuidePageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LauncherTheme" />
+        <activity
+            android:name="._activity._web.WebActivity"
+            android:screenOrientation="portrait" />
+        <!-- 个人中心 -->
+        <activity
+            android:name="._activity._personalCenter.PersonalCenterActivity"
+            android:screenOrientation="portrait" />
+        <!-- 入网 -->
+        <activity
+            android:name="._activity._intoNet.IntoNetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/GeneralBgStyle" />
+        <activity android:name="._activity._accountCertified.AccountCertifiedActivity" />
+        <activity android:name="._activity._shake.ShakeActivity" />
+        <!-- 预览大图界面 -->
+        <activity
+            android:name="._activity._imagePager.ImagePagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="._activity._lifeDetails.WonderfulLifeDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="._activity._album.AlbumActivity"
+            android:screenOrientation="portrait" />
+        <!-- 合伙人协议 -->
+        <activity
+            android:name="._activity._partnerProtocol.PartnerProtocolActivity"
+            android:screenOrientation="portrait" />
+        <!-- 合伙人控制台 -->
+        <activity
+            android:name="._activity._partnerControl.PartnerControlActivity"
+            android:screenOrientation="portrait" />
+        <!-- 明细 -->
+        <activity
+            android:name="._activity._partnerControl._details.ProfitDetailsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 收益 -->
+        <activity
+            android:name="._activity._partnerControl._total.TotalProfitActivity"
+            android:screenOrientation="portrait" />
+        <!-- 年华 -->
+        <activity
+            android:name="._activity._partnerControl._qrnh.QRNHActivity"
+            android:screenOrientation="portrait" />
+        <!-- 合伙人申请 -->
+        <activity
+            android:name="._activity._applyPartner.ApplyPartnerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 认购订单 -->
+        <activity
+            android:name="._activity._partnerControl._subscriptionOrder.SubscriptionOrderActivity"
+            android:screenOrientation="portrait" />
+        <!-- 上传凭证 -->
+        <activity
+            android:name="._activity._uploadVoucher.UploadVoucherActivity"
+            android:screenOrientation="portrait" />
+        <!-- 审核流程 -->
+        <activity
+            android:name="._activity._auditProcess.AuditProcessActivity"
+            android:screenOrientation="portrait" />
+        <!-- 畅通豆使用攻略 -->
+        <activity
+            android:name="._activity._smoothBeansUse.SmoothBeansUseActivity"
+            android:screenOrientation="portrait" />
+        <!-- 查看大图 -->
+        <activity
+            android:name="._activity._watchBigPicture.WatchPictureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LauncherTheme" />
+    </application>
+
+</manifest>

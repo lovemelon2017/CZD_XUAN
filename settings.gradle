@@ -1,0 +1,1 @@
+include ':app', ':ZXingLibrary', "charge51", ':storelibrary', ':ZXingLibrary2','laidian'

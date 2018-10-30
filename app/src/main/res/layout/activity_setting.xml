@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_about_samo"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/unite_ripple"
+        android:drawableRight="@drawable/right_arrow_btn"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="@string/about_samo"
+        android:textColor="@color/black_32"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/gray_f2" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_insturctions"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/unite_ripple"
+        android:drawableRight="@drawable/right_arrow_btn"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="@string/instructions"
+        android:textColor="@color/black_32"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/gray_f2" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_out_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/title_radius"
+        android:text="@string/out_log_in"
+        android:textColor="@color/white_ff" />
+</LinearLayout>

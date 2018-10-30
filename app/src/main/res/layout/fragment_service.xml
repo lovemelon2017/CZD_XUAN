@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/serve"
+        android:textColor="@color/white_ff"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="建桩服务"
+        android:textColor="@color/black_64"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_ff"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="5dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_become_partner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/become_partner"
+            android:gravity="center"
+            android:text="成为合伙人"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_apply_pile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/apply_for_construction"
+            android:gravity="center"
+            android:text="申请建桩"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_into_network"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/electric_pile_and_network"
+            android:gravity="center"
+            android:text="并网共营"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_partner_advisory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/partner_advisory"
+            android:gravity="center"
+            android:text="合伙人控制台"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="汽车售服"
+        android:textColor="@color/black_64"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_ff"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="5dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_car_model"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/car_model"
+            android:gravity="center"
+            android:text="热销车型"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_auto_finance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/auto_finance"
+            android:gravity="center"
+            android:text="金融服务"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_business_plan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/business_plan"
+            android:gravity="center"
+            android:text="企业方案"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_rent_purchase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/to_rent_purchasing"
+            android:gravity="center"
+            android:text="以租代购"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="车主服务"
+        android:textColor="@color/black_64"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_ff"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="5dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_driving"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/driving"
+            android:gravity="center"
+            android:text="代驾"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_car_insurance_purchase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/car_insurance_purchase"
+            android:gravity="center"
+            android:text="车险购买"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/service"
+            android:gravity="center"
+            android:text="保养与维修"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_illegal_inquiry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/illegal_inquiry"
+            android:gravity="center"
+            android:text="违章查询"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

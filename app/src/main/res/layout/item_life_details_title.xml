@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/comment_avatar" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_head"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="12dp"
+        android:paddingTop="15dp"
+        android:text="测试1测试1测试1测试1测试1测试1测试1测试1测试1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="04-24"
+        android:textColor="@color/black_64"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_below="@id/tv_time"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="我是内容"
+        android:textColor="@color/black_32"
+        android:textSize="14sp" />
+
+    <com.langwing.samocharge._view._circle.MultiImageView
+        android:id="@+id/multi_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_below="@id/tv_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" />
+
+    <com.langwing.samocharge._view._circle.PraiseListView
+        android:id="@+id/praise_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_below="@id/multi_image_view"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="@color/gray_82"
+        android:textSize="14sp"
+        app:item_color="@color/gray_82" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/praise_list_view"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_f8"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="精彩评论"
+        android:textColor="@color/black_64"
+        android:textSize="14sp" />
+
+</RelativeLayout>

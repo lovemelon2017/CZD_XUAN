@@ -1,0 +1,10 @@
+
+
+           MD5: CE:E7:6F:C3:E2:FE:37:7D:AE:95:80:E6:EE:1F:5F:A8
+         SHA1: CC:3E:C9:C9:A4:DC:AB:EA:65:08:D9:76:1A:1A:A4:01:09:28:4D:AE
+         SHA256: 57:4B:66:64:52:60:5D:72:AC:CA:B7:85:67:FF:92:EE:79:6F:BE:1F:58:1D:AF:45:5D:BD:8C:A3:FF:7C:00:DF
+
+
+key store password charging123456
+key alias          ChargingStations
+key password       charging123456

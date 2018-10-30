@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="._activity._auditProcess.AuditProcessActivity">
+
+    <include layout="@layout/title" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_approval_status"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="审核中，请耐心等待..."
+        android:textColor="@color/white_ff"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/one_select"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:text="您提交申请正在审核中，请耐心等待。"
+        android:textColor="@color/black_32"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_f2" />
+
+</LinearLayout>

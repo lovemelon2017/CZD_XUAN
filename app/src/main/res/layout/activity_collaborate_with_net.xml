@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="._activity._applyForPile.ApplyForPileActivity">
+
+    <include layout="@layout/title" />
+
+    <RadioGroup
+        android:id="@+id/rg_network"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_personal_network"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_interactive"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="个人携桩入网"
+            android:textColor="@color/white_or_green_00" />
+
+        <RadioButton
+            android:id="@+id/rb_company_network"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_interactive"
+            android:button="@null"
+            android:gravity="center"
+            android:text="公司携桩入网"
+            android:textColor="@color/white_or_green_00" />
+    </RadioGroup>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_network"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/personal_network" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_consumer_hotline"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/unit_ripple_angle"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="联系方式：400-886-5160"
+        android:textColor="@color/black_32"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/gray_e5">
+    <item>
+        <selector>
+            <item
+                android:drawable="@color/gray_e5"
+                android:state_pressed="true" />
+            <item android:drawable="@color/white_ff" />
+        </selector>
+    </item>
+</ripple>

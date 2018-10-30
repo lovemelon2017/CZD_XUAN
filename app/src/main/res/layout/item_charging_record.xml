@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/charging_record" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_charging_station_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_icon"
+        android:text="经北一路充电站2号充电桩"
+        android:textColor="@color/black_32"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_charging_station_address"
+        android:layout_below="@id/tv_charging_station_address"
+        android:layout_marginTop="5dp"
+        android:text="2017-1-30 16:40"
+        android:textColor="@color/black_64"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_time"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray_f2" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:text="充电电量："
+        android:textColor="@color/black_64"
+        android:textSize="13sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/tv_cb"
+        android:text="12.00度"
+        android:textColor="@color/red_ff"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_total_cost"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:text="3000000000"
+        android:textColor="@color/red_ff"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/tv_total_cost"
+        android:text="费用合计："
+        android:textColor="@color/black_64"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/tv_total_cost"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray_f2" />
+</RelativeLayout>

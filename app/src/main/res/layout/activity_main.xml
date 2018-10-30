@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/dividing_line" />
+
+    <View
+        android:id="@+id/dividing_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/rg_main"
+        android:layout_toLeftOf="@id/iv_scan"
+        android:background="@color/gray_e5" />
+
+    <View
+        android:id="@+id/dividing_line_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/rg_main"
+        android:layout_toRightOf="@id/iv_scan"
+        android:background="@color/gray_e5" />
+
+    <com.langwing.samocharge._view.CSRadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/white_ff"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_charging_pile"
+            style="@style/MainBottomImg"
+            android:checked="true"
+            android:drawableTop="@drawable/station_ischeck"
+            android:text="充电桩" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_service"
+            style="@style/MainBottomImg"
+            android:drawableTop="@drawable/service_ischecked"
+            android:text="服务" />
+
+        <android.support.v7.widget.AppCompatRadioButton style="@style/MainBottomImg" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_dynamic"
+            style="@style/MainBottomImg"
+            android:drawableTop="@drawable/selector_dynamic"
+            android:text="动态" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_mine"
+            style="@style/MainBottomImg"
+            android:drawableTop="@drawable/selector_mine"
+            android:text="我的" />
+
+    </com.langwing.samocharge._view.CSRadioGroup>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/bottom_scan" />
+</RelativeLayout>

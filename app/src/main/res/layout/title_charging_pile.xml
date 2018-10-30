@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/arrow_down"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white_ff"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_station_type"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="12dp"
+        android:paddingRight="16dp"
+        android:src="@drawable/charging_station_list" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_search"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_toLeftOf="@id/iv_station_type"
+        android:layout_toRightOf="@id/tv_city"
+        android:background="@drawable/bg_white"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="8dp"
+        android:text="@string/search_address"
+        android:textColor="@color/black_64"
+        android:textColorHint="@color/gray_83"
+        android:textSize="14sp" />
+</RelativeLayout>

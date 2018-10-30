@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_complete_charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/charging_complete"
+        android:drawablePadding="10dp"
+        android:text="@string/complete_the_charge"
+        android:textColor="@color/black_32"
+        android:textSize="16sp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_payment_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_complete_charge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="80.00"
+        android:textColor="@color/black_32"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_payment_amount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/payment_amount"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_amount"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/charge_amount"
+        android:textColor="@color/cyan_blue"
+        android:textSize="14sp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_charging_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_amount"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="30dp"
+        android:text="80.00元"
+        android:textColor="@color/cyan_blue"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_charging_amount"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/gray_e6"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/charging_pile_number"
+        android:textColor="@color/black_64"
+        android:textSize="14sp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_charging_pile_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:text="037191990011"
+        android:textColor="@color/black_32"
+        android:textSize="14sp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_charging_pile_number"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/charging_time"
+        android:textColor="@color/black_64"
+        android:textSize="14sp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_charging_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_charging_pile_number"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:text="1.10.56"
+        android:textColor="@color/black_32"
+        android:textSize="14sp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_charging_time"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/charging_degree"
+        android:textColor="@color/black_64"
+        android:textSize="14sp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_charging_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_charging_time"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:text="31.3度"
+        android:textColor="@color/black_32"
+        android:textSize="14sp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_charging_degree"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/car_model"
+        android:textColor="@color/black_64"
+        android:textSize="14sp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_car_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_charging_degree"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:text="斯巴鲁森林人"
+        android:textColor="@color/black_32"
+        android:textSize="14sp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_car_model"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/end_reason"
+        android:textColor="@color/black_64"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_car_model"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:text="正常结束"
+        android:textColor="@color/black_32"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

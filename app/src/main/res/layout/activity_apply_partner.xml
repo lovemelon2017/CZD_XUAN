@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_ff"
+    android:orientation="vertical"
+    tools:context="._activity._applyPartner.ApplyPartnerActivity">
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- 申请步骤 -->
+            <LinearLayout
+                android:id="@+id/ll_step"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/title"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_base_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/one_select"
+                    android:gravity="center"
+                    android:text="基本信息"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp" />
+
+                <View
+                    android:id="@+id/line_h1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/gray_f2" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_detailed_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/two_normal"
+                    android:gravity="center"
+                    android:text="详细信息"
+                    android:textSize="13sp" />
+
+                <View
+                    android:id="@+id/line_h2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/gray_f2" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_other_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/three_normal"
+                    android:gravity="center"
+                    android:text="其他信息"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- 基本信息 -->
+            <RelativeLayout
+                android:id="@+id/rl_base_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_step">
+
+                <View
+                    android:id="@+id/rl_base_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/gray_f2" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/rl_base_1"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:text="中文姓名"
+                    android:textColor="@color/black_32"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/rl_base_1"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_toRightOf="@id/tv_name"
+                    android:background="@color/white_ff"
+                    android:hint="请输入您的姓名"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/et_name"
+                    android:background="@color/gray_f2" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/line1"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:text="居民身份证"
+                    android:textColor="@color/black_32"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_id_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@id/et_name"
+                    android:layout_below="@id/line1"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/white_ff"
+                    android:digits="0123456789xyzXYZ"
+                    android:hint="请输入您的18位居民身份证号码"
+                    android:inputType="text"
+                    android:maxLength="18"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/et_id_card"
+                    android:background="@color/gray_f2" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/line2"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:text="手机号码"
+                    android:textColor="@color/black_32"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@id/et_name"
+                    android:layout_below="@id/line2"
+                    android:background="@color/white_ff"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black_32"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tv_phone"
+                    android:background="@color/gray_f2" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/line3"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:text="验证码"
+                    android:textColor="@color/black_32"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_verification_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/line3"
+                    android:layout_marginRight="12dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/line3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@id/btn_verification_code"
+                    android:background="@color/gray_f2" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_verification_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@id/et_name"
+                    android:layout_below="@id/line3"
+                    android:layout_toLeftOf="@id/line4"
+                    android:background="@color/white_ff"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@id/et_verification_code"
+                    android:background="@color/gray_f2" />
+            </RelativeLayout>
+
+            <!-- 详细信息 -->
+            <RelativeLayout
+                android:id="@+id/rl_detailed_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_step"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_personal_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/gray_f2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:text="个人信息"
+                    android:textColor="@color/black_32"
+                    android:textSize="14sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tv_personal_info"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:text="家庭地址"
+                    android:textColor="@color/black_32"
+                    android:textSize="18sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_home_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tv_personal_info"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_toRightOf="@id/tv_address"
+                    android:drawableRight="@drawable/down_arrow_btn"
+                    android:gravity="center_vertical"
+                    android:hint="省/市/县"
+                    android:textColor="@color/black_32"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/rl_detailed_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tv_home_address"
+                    android:background="@color/gray_f2" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_detail_home_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/rl_detailed_line1"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/white_ff"
+                    android:hint="详细地址（请精确到区、街道、门牌号）"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/rl_detailed_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/et_detail_home_address"
+                    android:background="@color/gray_f2" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/rl_detailed_line2"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center"
+                    android:text="学历"
+                    android:textColor="@color/black_32"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/rl_detailed_line2"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/right_arrow_btn"
+                    android:gravity="center_vertical"
+                    android:hint="请选择"
+                    android:paddingLeft="200dp"
+                    android:paddingRight="12dp"
+                    android:textColor="@color/black_32"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/rl_detailed_line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@id/tv_education"
+                    android:background="@color/gray_f2" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/rl_detailed_line3"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center"
+                    android:text="单位名称"
+                    android:textColor="@color/black_32"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/rl_detailed_line3"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_toRightOf="@id/tv_company_name"
+                    android:background="@color/white_ff"
+                    android:hint="请输入单位名称"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/rl_detailed_line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/et_company_name"
+                    android:background="@color/gray_f2" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/rl_detailed_line4"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center"
+                    android:text="年收入"
+                    android:textColor="@color/black_32"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@id/et_company_name"
+                    android:layout_below="@id/rl_detailed_line4"
+                    android:layout_toRightOf="@id/tv_income"
+                    android:background="@color/white_ff"
+                    android:hint="请输入您的年收入(万)"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@id/et_income"
+                    android:background="@color/gray_f2" />
+
+            </RelativeLayout>
+
+            <!-- 其他信息  -->
+            <RelativeLayout
+                android:id="@+id/rl_other_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_step"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/rl_other_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/gray_f2" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/rl_other_line1"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:text="备注"
+                    android:textColor="@color/black_32"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/rl_other_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tv_note"
+                    android:background="@color/gray_f2" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/rl_other_line2"
+                    android:background="@color/white_ff"
+                    android:gravity="left|top"
+                    android:hint="请输入您想说的话"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="10dp"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@id/et_note"
+                    android:background="@color/gray_f2" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/rl_base_info"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/title_radius"
+                android:text="下一步"
+                android:textColor="@color/white_ff" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_next"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="确定加入我们，并愿意提供正确的信息，请点击下一步"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
